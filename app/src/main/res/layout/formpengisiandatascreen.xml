@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Pengisian Data"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/image_info"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/info" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_jenis_tes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_button_rapid_antigen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rapid Antigen" />
+
+            <RadioButton
+                android:id="@+id/radio_button_pcr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PCR" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edit_text_tanggal_terkonfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pilih Tanggal"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/edit_text_nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan NIK"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edit_text_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan nama" />
+
+        <EditText
+            android:id="@+id/edit_text_tanggal_lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pilih Tanggal"
+            android:inputType="date" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_jenis_kelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_button_laki_laki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki" />
+
+            <RadioButton
+                android:id="@+id/radio_button_perempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radio_group_hubungan_dengan_anda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_button_orangtua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orangtua" />
+
+            <RadioButton
+                android:id="@+id/radio_button_suami_istri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suami/Istri" />
+
+            <RadioButton
+                android:id="@+id/radio_button_anak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anak" />
+
+            <RadioButton
+                android:id="@+id/radio_button_kerabat_lainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kerabat Lainnya" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/check_box_confirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dengan ini saya menyetujui bahwa data yang saya isikan adalah benar" />
+
+        <Button
+            android:id="@+id/button_selanjutnya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selanjutnya"
+            android:onClick="onSelanjutnyaClicked" />
+
+    </LinearLayout>
+
+</ScrollView>
